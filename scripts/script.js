@@ -8,7 +8,7 @@ const indEntLoc = document.querySelector('entry-page');
 //this listens for clicking the title
 let titleBtn = document.querySelector("h1");
 titleBtn.addEventListener('click', () => {
-  history.pushState({page: "default"}, "", "http://127.0.0.1:5500/");
+  history.pushState({page: "default"}, "", "https://ecstaticstupidity.github.io/Lab7/");
   router.setState("default");
 });
 
@@ -16,7 +16,7 @@ titleBtn.addEventListener('click', () => {
 let settingsBtn = document.querySelector('[alt = "settings"]');
 settingsBtn.addEventListener('click', () => {
 
-  if(document.location == "http://127.0.0.1:5500/#Settings") {
+  if(document.location == "https://ecstaticstupidity.github.io/Lab7/#Settings") {
     return;
   }
   history.pushState({page: "settings"}, "Settings", "#Settings");
