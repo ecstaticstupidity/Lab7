@@ -24,8 +24,9 @@ router.setState = function(nextState) {
 
   if(nextState == "entry") {
     let entryPart = document.querySelector("entry-page");
-    title.innerHTML = "Entry"
-    body.classList.add("single-entry");
+    entryPart = "";
+    body.classList.remove("settings");
+    body.classList.add('single-entry');
   }
 
   
